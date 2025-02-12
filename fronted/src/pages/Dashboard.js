@@ -26,7 +26,7 @@ const Dashboard = () => {
         const fetchEvents = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const { data } = await axios.get("http://localhost:5000/api/events", {
+                const { data } = await axios.get("https://api.render.com/deploy/srv-cumdbptds78s73b5lbtg?key=qedK_tg1dDQ/api/events", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -57,7 +57,7 @@ const Dashboard = () => {
     const handleUpdate = async (crrevent) => {
         const token = localStorage.getItem('token');
 
-        const data = await axios.put(`http://localhost:5000/api/events/${crrevent._id}`,
+        const data = await axios.put(`https://api.render.com/deploy/srv-cumdbptds78s73b5lbtg?key=qedK_tg1dDQ/api/events/${crrevent._id}`,
             newEvent,
             {
                 headers: {
@@ -74,7 +74,7 @@ const Dashboard = () => {
     const handleDelete = async (id) => {
         const token = localStorage.getItem('token');
 
-        const data = await axios.delete(`http://localhost:5000/api/events/${id}`, {
+        const data = await axios.delete(`https://api.render.com/deploy/srv-cumdbptds78s73b5lbtg?key=qedK_tg1dDQ/api/events/${id}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             }
@@ -97,7 +97,7 @@ const Dashboard = () => {
         try {
             const token = localStorage.getItem('token');
             const { data } = await axios.post(
-                "http://localhost:5000/api/events",
+                "https://api.render.com/deploy/srv-cumdbptds78s73b5lbtg?key=qedK_tg1dDQ/api/events",
                 newEvent,
                 {
                     headers: {

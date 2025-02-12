@@ -18,7 +18,7 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/auth/register', {
+            await axios.post('https://api.render.com/deploy/srv-cumdbptds78s73b5lbtg?key=qedK_tg1dDQ/api/auth/register', {
                 name,
                 email,
                 password,
